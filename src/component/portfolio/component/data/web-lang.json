@@ -1,0 +1,44 @@
+[
+  {
+    "name": "HTML",
+    "percent": "80%",
+    "color": "flame",
+    "parameter": "html"
+  },
+  {
+    "name": "CSS / Sass",
+    "percent": "80%",
+    "color": "lapislazuli",
+    "parameter": "css"
+  },
+  {
+    "name": "JavaScript",
+    "percent": "80%",
+    "color": "minionyellow",
+    "parameter": "javascript"
+  },
+  {
+    "name": "PHP",
+    "percent": "50%",
+    "color": "toolbox",
+    "parameter": "php"
+  },
+  {
+    "name": "SQL",
+    "percent": "50%",
+    "color": "seablue",
+    "parameter": "sql"
+  },
+  {
+    "name": "TypeScript",
+    "percent": "40%",
+    "color": "strongblue",
+    "parameter": "typescript"
+  },
+  {
+    "name": "Twig",
+    "percent": "40%",
+    "color": "sage",
+    "parameter": "twig"
+  }
+]

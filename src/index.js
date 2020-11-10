@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { CSSTransition } from "react-transition-group";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./index.scss";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import Portfolio from "./component/portfolio/Portfolio";
+import Home from "./component/Home";
+
+function Main() {
+  const [showHome, setShowHome] = useState(true);
+  const [showPortfolio, setShowPortfolio] = useState(false);
+
+  return (
+    <>
+      {showHome && <Home onClick={() => setShowPortfolio(true)} />}
+      <CSSTransition
+        in={showPortfolio}
+        timeout={300}
+        classNames="portfolio"
+        unmountOnExit
+        onEnter={() => setShowHome(false)}
+        onExited={() => setShowHome(true)}
+      >
+        <Portfolio onClick={() => setShowPortfolio(false)} />
+      </CSSTransition>
+    </>
+  );
+}
+
+ReactDOM.render(<Main />, document.getElementById("root"));

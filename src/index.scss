@@ -1,0 +1,22 @@
+@import "assets/scss/reset";
+@import "assets/scss/variables";
+@import "assets/scss/base";
+
+.portfolio {
+  &-enter {
+    transition: 0.5s;
+    transform: translateY(100%);
+  }
+  &-enter-active {
+    transition: 0.5s;
+    transform: translateY(-100%);
+  }
+  &-exit {
+    transition: 0.5s;
+    transform: translateY(100%);
+  }
+  &-exit-active {
+    transition: 0.5s;
+    transform: translateY(100%);
+  }
+}

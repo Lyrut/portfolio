@@ -1,0 +1,66 @@
+.Work {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  margin-top: 50px;
+
+  &:first-child {
+    margin-bottom: 50px;
+  }
+
+  &:last-child {
+    margin-top: 50px;
+  }
+
+  .Year {
+  }
+
+  .Company {
+    .Logo {
+      height: 125px;
+      line-height: 125px;
+      margin: 30px auto;
+
+      img {
+        &.medium {
+          width: 200px;
+        }
+
+        &.large {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .Job {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Work {
+    height: 350px;
+    width: 450px;
+    padding: 0 20px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
+
+    .Company {
+      .Logo {
+        height: 150px;
+        line-height: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}

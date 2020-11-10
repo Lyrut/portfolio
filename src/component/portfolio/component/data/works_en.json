@@ -1,0 +1,63 @@
+[
+  {
+    "year": "2019",
+    "company": {
+      "name": "papernest",
+      "location": "Paris 19ème (75)"
+    },
+    "job": {
+      "description": null,
+      "name": "Front End Developer",
+      "task": [
+        "Graphic and functional improvement",
+        "Overhaul of websocket",
+        "Bug fixes"
+      ]
+    },
+    "technologies": ["Angular", "HTML/CSS", "Yaml", "Python", "Docker"],
+    "other": null
+  },
+  {
+    "year": "2017-2018",
+    "company": {
+      "name": "Castelis",
+      "location": "Ivry-sur-Seine (94)"
+    },
+    "job": {
+      "description": "10-month work-study program",
+      "name": "Front End Developer",
+      "task": [
+        "Improvement of the graphical interface according of customer tolerances",
+        "Website redesign"
+      ]
+    },
+    "technologies": [
+      "PHP",
+      "HTML/CSS",
+      "JavaScript",
+      "JQuery",
+      "SQL",
+      "Saas",
+      "Ilmatar"
+    ],
+    "other": null
+  },
+  {
+    "year": "2015-2017",
+    "company": {
+      "name": "Orange",
+      "location": "Vanves (92)"
+    },
+    "job": {
+      "description": "2-year work-study program",
+      "name": "Web Developer",
+      "task": [
+        "Creation and improvement of various web projects",
+        "Consolidation and consultation tool",
+        "Other tools and POC"
+      ]
+    },
+    "technologies": ["PHP", "HTML/CSS", "JavaScript", "JQuery", "SQL"],
+    "other": "Hackathon DTSI-DRCPG 2016 (3 days) : Award-winning \"Ma résa\" project"
+  }
+]

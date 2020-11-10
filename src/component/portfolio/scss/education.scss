@@ -1,0 +1,123 @@
+@import "../../../assets/scss/variables";
+
+.Education {
+  margin-top: 50px;
+  text-align: left;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+
+  .LeftColumn {
+    text-align: center;
+  }
+
+  .RightColumn {
+    margin: 0 10px;
+
+    .Title {
+      margin-top: 10px;
+
+      .Tooltip {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        vertical-align: top;
+
+        .TooltipTop {
+          min-width: 200px;
+          top: -20px;
+          left: 50%;
+          transform: translate(-50%, -100%);
+          padding: 10px 20px;
+          color: $font-primary;
+          background-color: $background-secondary;
+          font-weight: normal;
+          font-size: 13px;
+          border-radius: 8px;
+          position: absolute;
+          z-index: 1000;
+          box-sizing: border-box;
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+          display: none;
+
+          i {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -12px;
+            width: 24px;
+            height: 12px;
+            overflow: hidden;
+
+            &:after {
+              content: "";
+              position: absolute;
+              width: 12px;
+              height: 12px;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(45deg);
+              background-color: $background-secondary;
+              box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+
+        &:hover {
+          .TooltipTop {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .EducationWork {
+      margin-top: 10px;
+
+      .Bold {
+        font-weight: bold;
+      }
+    }
+
+    .School {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Education {
+    .RightColumn {
+      margin: 0 175px;
+    }
+
+    .School {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Education {
+    margin-top: 23px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .RightColumn {
+      width: 80%;
+      margin: 0;
+      .Title {
+        margin-top: 0;
+      }
+    }
+
+    .School {
+      margin-top: 0;
+    }
+  }
+}

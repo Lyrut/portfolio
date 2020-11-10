@@ -1,0 +1,150 @@
+@import "../../assets/scss/variables";
+
+#portfolio {
+  article {
+    .pageTop {
+      width: 100%;
+      height: 100vh;
+      padding: 200px 50px;
+      color: $font-primary-invert;
+      background-color: $background-primary;
+
+      a {
+        color: $font-primary-invert;
+
+        &#Facebook {
+          &:hover {
+            color: $color-facebook;
+          }
+        }
+
+        &#Twitter {
+          &:hover {
+            color: $color-twitter;
+          }
+        }
+
+        &#Instagram {
+          &:hover {
+            color: $color-instagram;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    top: 120px;
+    background-color: $background-secondary;
+    color: $font-primary;
+
+    a {
+      color: $font-primary;
+    }
+
+    .footer {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      background-color: $background-primary;
+
+      .Mail {
+        line-height: 200px;
+        font-size: 28px;
+        color: $font-primary-invert;
+      }
+    }
+  }
+
+  .pageTop,
+  section {
+    position: absolute;
+    width: 100%;
+    clip: rect(auto, auto, auto, auto);
+    box-sizing: border-box;
+
+    .FixedTop {
+      .Name {
+        position: fixed;
+        top: 40px;
+        left: 40px;
+        font-weight: bold;
+      }
+
+      .BtnHideInfo {
+        position: fixed;
+        top: 40px;
+        right: 42px;
+        z-index: 1000;
+        cursor: pointer;
+
+        .FaTimes {
+          transform: rotate(-360deg);
+          -webkit-transform: rotate(-360deg);
+          -moz-transform: rotate(-360deg);
+          -ms-transform: rotate(-360deg);
+          -o-transform: rotate(-360deg);
+          transition: transform 550ms ease;
+          -webkit-transition: transform 550ms ease;
+          -moz-transition: transform 550ms ease;
+          -ms-transition: transform 550ms ease;
+          -o-transition: transform 550ms ease;
+
+          &:hover {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transition: transform 550ms ease;
+            -webkit-transition: transform 550ms ease;
+            -moz-transition: transform 550ms ease;
+            -ms-transition: transform 550ms ease;
+            -o-transition: transform 550ms ease;
+            color: $red;
+          }
+        }
+      }
+
+      .SNList {
+        position: fixed;
+        top: 40%;
+        right: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #portfolio {
+    .pageTop,
+    section {
+      .FixedTop {
+        .BtnHideInfo {
+          width: 26px;
+          left: 50%;
+          right: 0;
+        }
+
+        .SNList {
+          position: fixed;
+          top: 40px;
+          right: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #portfolio {
+    .pageTop,
+    section {
+      .footer {
+        .Mail {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@import "../assets/scss/variables";
+
+.SocialNetworks {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    li {
+      a {
+        color: $font-primary-invert;
+
+        &#Facebook {
+          &:hover {
+            color: $color-facebook;
+          }
+        }
+        &#Twitter {
+          &:hover {
+            color: $color-twitter;
+          }
+        }
+        &#Instagram {
+          &:hover {
+            color: $color-instagram;
+          }
+        }
+      }
+    }
+  }
+
+  &.Home {
+    width: 225px;
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    .Icons {
+      font-size: 24px;
+    }
+  }
+
+  &.Portfolio {
+    ul {
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100px;
+
+      li {
+        .Icons {
+          z-index: 1000;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .SocialNetworks {
+    &.Home {
+      width: 400px;
+      top: 35%;
+
+      .Icons {
+        font-size: 42px;
+      }
+    }
+
+    &.Portfolio {
+      width: 150px;
+      ul {
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+
+        li {
+          .Icons {
+            z-index: 1000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .SocialNetworks {
+    &.Home {
+      width: 250px;
+      top: 30%;
+
+      .Icons {
+        font-size: 24px;
+      }
+    }
+
+    &.Portfolio {
+      width: 250px;
+      ul {
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 100%;
+
+        li {
+          .Icons {
+            z-index: 1000;
+          }
+        }
+      }
+    }
+  }
+}

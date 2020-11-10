@@ -1,0 +1,90 @@
+@import "../assets/scss/variables";
+
+#Home {
+  color: $font-primary-invert;
+  z-index: 1;
+  mix-blend-mode: difference;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Name {
+    font-size: 48px;
+  }
+
+  .BtnShowInfo {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 36%;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    cursor: pointer;
+
+    .FaAngleDownIcon {
+      font-size: 32px;
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transition: transform 550ms ease;
+      -webkit-transition: transform 550ms ease;
+      -moz-transition: transform 550ms ease;
+      -ms-transition: transform 550ms ease;
+      -o-transition: transform 550ms ease;
+
+      &:hover {
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transition: transform 550ms ease;
+        -webkit-transition: transform 550ms ease;
+        -moz-transition: transform 550ms ease;
+        -ms-transition: transform 550ms ease;
+        -o-transition: transform 550ms ease;
+        color: $cyan;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #Home {
+    .Name {
+      font-size: 100px;
+    }
+
+    .BtnShowInfo {
+      bottom: 32%;
+
+      .FaAngleDownIcon {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #Home {
+    .Name {
+      font-size: 128px;
+    }
+
+    .BtnShowInfo {
+      bottom: 25%;
+
+      .FaAngleDownIcon {
+        font-size: 32px;
+      }
+    }
+  }
+}

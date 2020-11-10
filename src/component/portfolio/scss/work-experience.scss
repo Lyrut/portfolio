@@ -1,0 +1,38 @@
+@import "../../../assets/scss/variables";
+
+.WorkExperienceContainer {
+  width: 100%;
+
+  .TitleContainer {
+    height: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-title;
+  }
+
+  .ContentContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .WorkExperienceContainer {
+    height: 100vh;
+
+    .ContentContainer {
+      padding: 0 100px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .WorkExperienceContainer {
+    .TitleContainer {
+      padding-left: 120px;
+      text-align: left;
+    }
+  }
+}

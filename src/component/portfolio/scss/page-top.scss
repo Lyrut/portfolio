@@ -1,0 +1,12 @@
+div {
+  &.PageTopContent {
+    width: 100%;
+    height: 100vh;
+
+    div {
+      &.ContentContainer {
+        padding: 0 200px;
+      }
+    }
+  }
+}

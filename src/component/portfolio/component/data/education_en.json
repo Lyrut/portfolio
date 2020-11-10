@@ -1,0 +1,66 @@
+[
+  {
+    "years": "2017-2018",
+    "title": {
+      "name": "Préparation d'un Titre RNCP de Niveau 1 \"Expert en Etude et Développement du SI\"",
+      "speciality": null,
+      "acronym": null
+    },
+    "work": {
+      "type": "Study-work training",
+      "period": "1 week in school / 3 weeks in company"
+    },
+    "school": {
+      "name": "HITEMA",
+      "location": "Issy-les-Moulineaux"
+    }
+  },
+  {
+    "years": "2015-2017",
+    "title": {
+      "name": "Préparation d'un Titre RNCP de Niveau 2 \"Responsable en Etude et Management du SI\"",
+      "speciality": null,
+      "acronym": null
+    },
+    "work": {
+      "type": "Study-work training",
+      "period": "1 week in school / 3 weeks in company"
+    },
+    "school": {
+      "name": "HITEMA",
+      "location": "Issy-les-Moulineaux"
+    }
+  },
+  {
+    "years": "2013-2015",
+    "title": {
+      "name": "BTS Service Informatiques aux Organisations (SIO)",
+      "speciality": "Spécialité SLAM",
+      "acronym": "Solutions Logicielles et Applications Métier"
+    },
+    "work": {
+      "type": null,
+      "period": null
+    },
+    "school": {
+      "name": "Lycée Parc des Loges",
+      "location": "Évry"
+    }
+  },
+  {
+    "years": "2012-2013",
+    "title": {
+      "name": "Baccalauréat Sciences et Technologies de la Gestion (STG)",
+      "speciality": "Spécialité GSI",
+      "acronym": "Gestion des Systèmes d'Information"
+    },
+    "work": {
+      "type": null,
+      "period": null
+    },
+    "school": {
+      "name": "Lycée Parc des Loges",
+      "location": "Évry"
+    }
+  }
+]

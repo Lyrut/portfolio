@@ -1,0 +1,49 @@
+[
+  {
+    "year": "2019",
+    "company": {
+      "website": "https://www.papernest.com/",
+      "logo": {
+        "link": "https://papernestmain.s3.amazonaws.com/static/main_site/images/logo_papernest_light.d6c10997679d.svg",
+        "class": "medium"
+      },
+      "name": "papernest",
+      "location": "Paris 19ème (75)"
+    },
+    "job": {
+      "description": null
+    }
+  },
+  {
+    "year": "2017-2018",
+    "company": {
+      "website": "https://www.castelis.com/",
+      "logo": {
+        "link": "https://www.castelis.com/-/media/1421B3AB17F54B019F33CBF70E9A9F9D",
+        "class": "medium"
+      },
+      "name": "Castelis",
+      "location": "Ivry-sur-Seine (94)"
+    },
+    "job": {
+      "description": "Alternance en professionnalisation",
+      "duration": "de 10 mois"
+    }
+  },
+  {
+    "year": "2015-2017",
+    "company": {
+      "website": "https://www.orange.fr/portail",
+      "logo": {
+        "link": "https://c.woopic.com/logo-orange.png",
+        "class": "large"
+      },
+      "name": "Orange",
+      "location": "Vanves (92)"
+    },
+    "job": {
+      "description": "Alternance en apprentissage",
+      "duration": "de 2 ans"
+    }
+  }
+]
