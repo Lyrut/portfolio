@@ -77,7 +77,7 @@ function Portfolio(props) {
         </IconContext.Provider>
       </div>
       <div className="SNList">
-        <SocialNetworks PageName="Portfolio" />
+        <SocialNetworks PageName="PortfolioP" />
       </div>
     </div>
   );
