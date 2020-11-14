@@ -11,9 +11,17 @@ function Main() {
   const [showHome, setShowHome] = useState(true);
   const [showPortfolio, setShowPortfolio] = useState(false);
 
+  const showHomeClass = showHome ? "fade-in" : "fade-out";
+  const showPortfolioClass = showPortfolio ? "fade-in" : "fade-out";
+
   return (
     <>
-      {showHome && <Home onClick={() => setShowPortfolio(true)} />}
+      {showHome && (
+        <Home
+          onClick={() => setShowPortfolio(true)}
+          HomeClass={showHomeClass}
+        />
+      )}
       <CSSTransition
         in={showPortfolio}
         timeout={300}
@@ -22,7 +30,10 @@ function Main() {
         onEnter={() => setShowHome(false)}
         onExited={() => setShowHome(true)}
       >
-        <Portfolio onClick={() => setShowPortfolio(false)} />
+        <Portfolio
+          onClick={() => setShowPortfolio(false)}
+          PortfolioClass={showPortfolioClass}
+        />
       </CSSTransition>
     </>
   );

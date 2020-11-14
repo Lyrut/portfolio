@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function SocialNetwork(props) {
-  let PageName = "SocialNetworks";
+  let PageName = "socialNetworks";
 
   if (
     props.PageName !== "" &&
@@ -23,9 +23,9 @@ function SocialNetwork(props) {
             href="https://www.facebook.com/vissarut.ly"
             target="_blank"
             rel="noopener noreferrer"
-            id="Facebook"
+            id="facebook"
           >
-            <IconContext.Provider value={{ className: "Icons" }}>
+            <IconContext.Provider value={{ className: "icons" }}>
               <FaFacebook />
             </IconContext.Provider>
           </a>
@@ -35,9 +35,9 @@ function SocialNetwork(props) {
             href="https://twitter.com/_Lyrut"
             target="_blank"
             rel="noopener noreferrer"
-            id="Twitter"
+            id="twitter"
           >
-            <IconContext.Provider value={{ className: "Icons" }}>
+            <IconContext.Provider value={{ className: "icons" }}>
               <FaTwitter />
             </IconContext.Provider>
           </a>
@@ -47,9 +47,9 @@ function SocialNetwork(props) {
             href="https://www.instagram.com/_lyrut/?hl=fr"
             target="_blank"
             rel="noopener noreferrer"
-            id="Instagram"
+            id="instagram"
           >
-            <IconContext.Provider value={{ className: "Icons" }}>
+            <IconContext.Provider value={{ className: "icons" }}>
               <FaInstagram />
             </IconContext.Provider>
           </a>

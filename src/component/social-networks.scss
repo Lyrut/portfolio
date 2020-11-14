@@ -1,6 +1,6 @@
 @import "../assets/scss/variables";
 
-.SocialNetworks {
+.socialNetworks {
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -29,7 +29,7 @@
     }
   }
 
-  &.Home {
+  &.home {
     width: 225px;
     position: absolute;
     left: 50%;
@@ -40,19 +40,19 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 
-    .Icons {
+    .icons {
       font-size: 24px;
     }
   }
 
-  &.PortfolioP {
+  &.portfolioP {
     ul {
       justify-content: space-between;
       flex-direction: column;
       height: 100px;
 
       li {
-        .Icons {
+        .icons {
           z-index: 1000;
         }
       }
@@ -61,17 +61,17 @@
 }
 
 @media (min-width: 768px) {
-  .SocialNetworks {
-    &.Home {
+  .socialNetworks {
+    &.home {
       width: 400px;
       top: 35%;
 
-      .Icons {
+      .icons {
         font-size: 42px;
       }
     }
 
-    &.PortfolioP {
+    &.portfolioP {
       width: 150px;
       ul {
         justify-content: space-between;
@@ -79,7 +79,7 @@
         height: 100%;
 
         li {
-          .Icons {
+          .icons {
             z-index: 1000;
           }
         }
@@ -89,17 +89,17 @@
 }
 
 @media (min-width: 1200px) {
-  .SocialNetworks {
-    &.Home {
+  .socialNetworks {
+    &.home {
       width: 250px;
       top: 30%;
 
-      .Icons {
+      .icons {
         font-size: 24px;
       }
     }
 
-    &.PortfolioP {
+    &.portfolioP {
       width: 250px;
       ul {
         justify-content: space-evenly;
@@ -107,7 +107,7 @@
         height: 100%;
 
         li {
-          .Icons {
+          .icons {
             z-index: 1000;
           }
         }

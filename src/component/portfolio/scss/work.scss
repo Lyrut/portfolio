@@ -1,4 +1,4 @@
-.Work {
+.work {
   width: 100%;
   text-align: center;
   align-self: center;
@@ -12,11 +12,8 @@
     margin-top: 50px;
   }
 
-  .Year {
-  }
-
-  .Company {
-    .Logo {
+  .company {
+    .logo {
       height: 125px;
       line-height: 125px;
       margin: 30px auto;
@@ -33,13 +30,13 @@
     }
   }
 
-  .Job {
+  .job {
     margin-top: 10px;
   }
 }
 
 @media (min-width: 768px) {
-  .Work {
+  .work {
     height: 350px;
     width: 450px;
     padding: 0 20px;
@@ -53,8 +50,8 @@
       margin-top: 0;
     }
 
-    .Company {
-      .Logo {
+    .company {
+      .logo {
         height: 150px;
         line-height: 150px;
       }

@@ -4,16 +4,16 @@ import "../scss/skill.scss";
 function Skill(props) {
   let percentId, progressColor, progessParameter;
   percentId = props.Percent + "-percent";
-  progressColor = "Progressbar Progress-" + props.Color;
-  progessParameter = "Progress-" + props.Parameter;
+  progressColor = "progressbar progress-" + props.Color;
+  progessParameter = "progress-" + props.Parameter;
 
   return (
     <li className="language">
-      <div className="ProgressbarTitle">
+      <div className="progressbarTitle">
         <h3>{props.LangName}</h3>
-        <span className="Percent" id={percentId}></span>
+        <span className="percent" id={percentId}></span>
       </div>
-      <div className="BarContainer">
+      <div className="barContainer">
         <span className={progressColor} id={progessParameter}></span>
       </div>
     </li>

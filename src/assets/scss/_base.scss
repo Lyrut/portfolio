@@ -3,7 +3,7 @@
 
 * {
   font-family: "FuturaBook", "Montserrat";
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: 0.1em;
 }
 
@@ -26,5 +26,11 @@ body {
     &-track {
       background: $gray;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 21px;
   }
 }

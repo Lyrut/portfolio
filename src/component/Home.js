@@ -8,13 +8,13 @@ import { FaAngleDown } from "react-icons/fa";
 
 function Home(props) {
   return (
-    <div id="Home">
-      <div className="Content">
-        <div className="Name">
-          <SocialNetworks PageName="Home" />
+    <div id="home">
+      <div className={"content " + props.HomeClass}>
+        <div className="name">
+          <SocialNetworks PageName="home" />
           Vissarut Ly
-          <div className="BtnShowInfo" onClick={props.onClick}>
-            <IconContext.Provider value={{ className: "FaAngleDownIcon" }}>
+          <div className="btnShowInfo" onClick={props.onClick}>
+            <IconContext.Provider value={{ className: "faAngleDownIcon" }}>
               <FaAngleDown />
             </IconContext.Provider>
           </div>

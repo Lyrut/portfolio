@@ -1,4 +1,5 @@
 @import "../../assets/scss/variables";
+@import "../../assets/scss/fade";
 
 #portfolio {
   article {
@@ -12,19 +13,19 @@
       a {
         color: $font-primary-invert;
 
-        &#Facebook {
+        &#facebook {
           &:hover {
             color: $color-facebook;
           }
         }
 
-        &#Twitter {
+        &#twitter {
           &:hover {
             color: $color-twitter;
           }
         }
 
-        &#Instagram {
+        &#instagram {
           &:hover {
             color: $color-instagram;
           }
@@ -48,7 +49,7 @@
       justify-content: center;
       background-color: $background-primary;
 
-      .Mail {
+      .mail {
         line-height: 200px;
         font-size: 28px;
         color: $font-primary-invert;
@@ -63,22 +64,22 @@
     clip: rect(auto, auto, auto, auto);
     box-sizing: border-box;
 
-    .FixedTop {
-      .Name {
+    .fixedTop {
+      .name {
         position: fixed;
         top: 40px;
         left: 40px;
         font-weight: bold;
       }
 
-      .BtnHideInfo {
+      .btnHideInfo {
         position: fixed;
         top: 40px;
         right: 42px;
         z-index: 1000;
         cursor: pointer;
 
-        .FaTimes {
+        .faTimes {
           transform: rotate(-360deg);
           -webkit-transform: rotate(-360deg);
           -moz-transform: rotate(-360deg);
@@ -106,27 +107,29 @@
         }
       }
 
-      .SNList {
+      .snList {
         position: fixed;
         top: 40%;
         right: 40px;
       }
     }
   }
+
+  @include fade;
 }
 
 @media (min-width: 768px) {
   #portfolio {
     .pageTop,
     section {
-      .FixedTop {
-        .BtnHideInfo {
+      .fixedTop {
+        .btnHideInfo {
           width: 26px;
           left: 50%;
           right: 0;
         }
 
-        .SNList {
+        .snList {
           position: fixed;
           top: 40px;
           right: 40px;
@@ -141,7 +144,7 @@
     .pageTop,
     section {
       .footer {
-        .Mail {
+        .mail {
           font-size: 42px;
         }
       }

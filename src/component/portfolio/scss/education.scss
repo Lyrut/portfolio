@@ -1,34 +1,34 @@
 @import "../../../assets/scss/variables";
 
-.Education {
+.education {
   margin-top: 50px;
   text-align: left;
 
   &:first-child {
-    margin-top: 25px;
+    margin-top: 0;
   }
 
   &:last-child {
     margin-bottom: 25px;
   }
 
-  .LeftColumn {
+  .leftColumn {
     text-align: center;
   }
 
-  .RightColumn {
+  .rightColumn {
     margin: 0 10px;
 
-    .Title {
+    .title {
       margin-top: 10px;
 
-      .Tooltip {
+      .tooltip {
         display: inline-block;
         position: relative;
         text-align: left;
         vertical-align: top;
 
-        .TooltipTop {
+        .tooltipTop {
           min-width: 200px;
           top: -20px;
           left: 50%;
@@ -68,51 +68,51 @@
         }
 
         &:hover {
-          .TooltipTop {
+          .tooltipTop {
             display: block;
           }
         }
       }
     }
 
-    .EducationWork {
+    .educationWork {
       margin-top: 10px;
 
-      .Bold {
+      .bold {
         font-weight: bold;
       }
     }
 
-    .School {
+    .school {
       margin-top: 15px;
     }
   }
 }
 
 @media (min-width: 768px) {
-  .Education {
-    .School {
+  .education {
+    .school {
       margin-top: 0;
     }
   }
 }
 
 @media (min-width: 1200px) {
-  .Education {
+  .education {
     margin-top: 23px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
 
-    .RightColumn {
+    .rightColumn {
       width: 80%;
       margin: 0;
-      .Title {
+      .title {
         margin-top: 0;
       }
     }
 
-    .School {
+    .school {
       margin-top: 0;
     }
   }

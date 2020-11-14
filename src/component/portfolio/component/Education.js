@@ -9,11 +9,11 @@ function Education(props) {
 
   if (props.TitleAcronym !== null) {
     tooltip = (
-      <span className="Tooltip">
+      <span className="tooltip">
         <IconContext.Provider value={{ size: 12, verticalAlign: "sup" }}>
           <FaRegQuestionCircle />
         </IconContext.Provider>
-        <div className="TooltipTop">
+        <div className="tooltipTop">
           {props.TitleAcronym}
           <i></i>
         </div>
@@ -23,19 +23,19 @@ function Education(props) {
 
   if (props.WorksType !== null && props.WorkPeriod !== null) {
     work = (
-      <div className="EducationWork">
-        <span className="Bold">{props.WorkType}</span>: {props.WorkPeriod}
+      <div className="educationWork">
+        <span className="bold">{props.WorkType}</span>: {props.WorkPeriod}
       </div>
     );
   }
 
   return (
-    <div className="Education">
-      <div className="LeftColumn">
-        <div className="Years">{props.Years}</div>
+    <div className="education">
+      <div className="leftColumn">
+        <div className="years">{props.Years}</div>
       </div>
-      <div className="RightColumn">
-        <div className="Title">
+      <div className="rightColumn">
+        <div className="title">
           <div>{props.TitleName}</div>
           <div>
             {props.TitleSpeciality}
@@ -43,7 +43,7 @@ function Education(props) {
           </div>
         </div>
         {work}
-        <div className="School">
+        <div className="school">
           {props.SchoolName} - {props.SchoolLocation}
         </div>
       </div>

@@ -1,6 +1,7 @@
 @import "../assets/scss/variables";
+@import "../assets/scss/fade";
 
-#Home {
+#home {
   color: $font-primary-invert;
   z-index: 1;
   mix-blend-mode: difference;
@@ -10,11 +11,11 @@
   align-items: center;
   justify-content: center;
 
-  .Name {
+  .name {
     font-size: 48px;
   }
 
-  .BtnShowInfo {
+  .btnShowInfo {
     height: 32px;
     width: 32px;
     position: absolute;
@@ -27,7 +28,7 @@
     -o-transform: translate(-50%, 50%);
     cursor: pointer;
 
-    .FaAngleDownIcon {
+    .faAngleDownIcon {
       font-size: 32px;
       transform: rotate(-360deg);
       -webkit-transform: rotate(-360deg);
@@ -55,18 +56,20 @@
       }
     }
   }
+
+  @include fade;
 }
 
 @media (min-width: 768px) {
-  #Home {
-    .Name {
+  #home {
+    .name {
       font-size: 100px;
     }
 
-    .BtnShowInfo {
+    .btnShowInfo {
       bottom: 32%;
 
-      .FaAngleDownIcon {
+      .faAngleDownIcon {
         font-size: 42px;
       }
     }
@@ -74,15 +77,15 @@
 }
 
 @media (min-width: 1200px) {
-  #Home {
-    .Name {
+  #home {
+    .name {
       font-size: 128px;
     }
 
-    .BtnShowInfo {
+    .btnShowInfo {
       bottom: 25%;
 
-      .FaAngleDownIcon {
+      .faAngleDownIcon {
         font-size: 32px;
       }
     }

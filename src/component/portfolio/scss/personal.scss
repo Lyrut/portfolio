@@ -1,0 +1,41 @@
+@import "../../../assets/scss/variables";
+
+.message {
+  width: 75%;
+  height: 75vh;
+  margin: 0 auto;
+
+  .welcome {
+    font-size: 21px;
+  }
+
+  .name {
+    margin-top: 20px;
+  }
+
+  .subdescription {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .message {
+    height: 100%;
+    padding-top: 30vh;
+
+    .welcome {
+      font-size: 24px;
+    }
+
+    .subdescription {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .message {
+    width: 100%;
+    margin: 0;
+  }
+}

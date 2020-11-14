@@ -1,0 +1,95 @@
+@import "../../../assets/scss/variables";
+
+.skillsContainer,
+.educationContainer,
+.workExperienceContainer,
+.personalContainer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.titleContainer {
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-title;
+}
+
+.contentContainer {
+  margin-top: 50px;
+
+  .development {
+    text-align: left;
+
+    .skillsBarContainer {
+      width: 300px;
+      margin: 0 auto;
+      list-style: none;
+    }
+  }
+
+  .listWorks {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .listEducations {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .skillsContainer,
+  .educationContainer,
+  .workExperienceContainer,
+  .personalContainer {
+    height: 90vh;
+  }
+
+  .contentContainer {
+    .development {
+      padding: 0 200px;
+
+      .skillsBarContainer {
+        width: 500px;
+      }
+    }
+
+    .listWorks {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .listEducations {
+      align-self: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .skillsContainer,
+  .educationContainer,
+  .workExperienceContainer,
+  .personalContainer {
+    height: 77vh;
+  }
+
+  .titleContainer {
+    padding-left: 120px;
+    text-align: left;
+  }
+
+  .contentContainer {
+    padding: 0 200px;
+
+    .development {
+      padding: 0 20px;
+    }
+
+    .listEducations {
+      width: 100%;
+      align-self: center;
+    }
+  }
+}

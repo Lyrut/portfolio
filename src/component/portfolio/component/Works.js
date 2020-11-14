@@ -5,17 +5,17 @@ function Works(props) {
   let job;
   if (props.jobDescription !== null)
     job = (
-      <div className="Job">
-        <div className="JobDescription">{props.JobDescription}</div>
-        <div className="JobDuration">{props.JobDuration}</div>
+      <div className="job">
+        <div className="jobDescription">{props.JobDescription}</div>
+        <div className="jobDuration">{props.JobDuration}</div>
       </div>
     );
 
   return (
-    <div className="Work">
-      <div className="Year">{props.Year}</div>
-      <div className="Company">
-        <div className="Logo">
+    <div className="work">
+      <div className="year">{props.Year}</div>
+      <div className="company">
+        <div className="logo">
           <a
             href={props.CompanyWebsite}
             target="_blank"

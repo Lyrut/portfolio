@@ -1,18 +1,20 @@
 import React from "react";
 
+import "../scss/container.scss";
+
 function Container(props) {
   function renderSection(name) {
     switch (name) {
-      case "WorkExperience":
-        return props.Data;
-      case "Skills":
+      case "skills":
         return (
-          <div className="Development">
-            <ul className="SkillsBarContainer">{props.Data}</ul>
+          <div className="development">
+            <ul className="skillsBarContainer">{props.Data}</ul>
           </div>
         );
-      case "Education":
-        return <div className="ListEducation">{props.Data}</div>;
+      case "workExperience":
+        return <div className="listWorks">{props.Data}</div>;
+      case "education":
+        return <div className="listEducations">{props.Data}</div>;
       default:
         return props.Data;
     }
@@ -20,9 +22,11 @@ function Container(props) {
 
   return (
     <div className={props.SectionName + "Container"}>
-      <div className="TitleContainer">{props.ContainerName}</div>
+      {props.SectionName !== "personal" ? (
+        <div className="titleContainer">{props.ContainerName}</div>
+      ) : null}
 
-      <div className="ContentContainer">{renderSection(props.SectionName)}</div>
+      <div className="contentContainer">{renderSection(props.SectionName)}</div>
     </div>
   );
 }
