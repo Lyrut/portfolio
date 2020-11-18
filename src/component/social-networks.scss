@@ -10,19 +10,14 @@
       a {
         color: $font-primary-invert;
 
-        &#Facebook {
+        &#facebook {
           &:hover {
             color: $color-facebook;
           }
         }
-        &#Twitter {
+        &#twitter {
           &:hover {
             color: $color-twitter;
-          }
-        }
-        &#Instagram {
-          &:hover {
-            color: $color-instagram;
           }
         }
       }
@@ -53,7 +48,7 @@
 
       li {
         .icons {
-          z-index: 1000;
+          z-index: 1;
         }
       }
     }
@@ -80,7 +75,7 @@
 
         li {
           .icons {
-            z-index: 1000;
+            z-index: 1;
           }
         }
       }
@@ -108,7 +103,7 @@
 
         li {
           .icons {
-            z-index: 1000;
+            z-index: 1;
           }
         }
       }

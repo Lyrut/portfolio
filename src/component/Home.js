@@ -13,7 +13,7 @@ function Home(props) {
         <div className="name">
           <SocialNetworks PageName="home" />
           Vissarut Ly
-          <div className="btnShowInfo" onClick={props.onClick}>
+          <div className="btnShowPortfolio" onClick={props.onClick}>
             <IconContext.Provider value={{ className: "faAngleDownIcon" }}>
               <FaAngleDown />
             </IconContext.Provider>

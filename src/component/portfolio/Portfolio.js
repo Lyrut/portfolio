@@ -4,7 +4,6 @@ import "./portfolio.scss";
 import DataPortfolio from "./data/portfolio_fr.json";
 
 import SocialNetworks from "../SocialNetworks";
-import PageTop from "./component/PageTop";
 import Container from "./component/Container";
 
 import DataPersonal from "./component/data/personal_fr.json";
@@ -19,6 +18,7 @@ import Education from "./component/Education";
 
 import { IconContext } from "react-icons";
 import { FaTimes } from "react-icons/fa";
+import { AiOutlineFilePdf } from "react-icons/ai";
 
 function Portfolio(props) {
   const personal = DataPersonal.map((data, i) => {
@@ -91,44 +91,58 @@ function Portfolio(props) {
     </div>
   );
 
-  const portfolio = DataPortfolio.map((data, i) => {
+  const portfolio = () => {
     return (
-      <div key={i}>
+      <>
         <Container
-          ContainerName={data.personal}
+          ContainerName={DataPortfolio.personal}
           SectionName="personal"
           Data={personal}
         />
         <Container
-          ContainerName={data.skills}
+          ContainerName={DataPortfolio.skills}
           SectionName="skills"
           Data={skills}
         />
         <Container
-          ContainerName={data.workExperience}
+          ContainerName={DataPortfolio.workExperience}
           SectionName="workExperience"
           Data={works}
         />
         <Container
-          ContainerName={data.education}
+          ContainerName={DataPortfolio.education}
           SectionName="education"
           Data={educations}
         />
-      </div>
+      </>
     );
-  });
+  };
 
   return (
     <div id="portfolio">
-      <article className={props.PortfolioClass}>
-        <div className="pageTop">
-          {topInfo}
-          <PageTop />
-        </div>
+      <article>
+        <div className="pageTop">{topInfo}</div>
 
         <section>
           {topInfo}
-          {portfolio}
+          {portfolio()}
+
+          <div className="cv">
+            <a
+              href={process.env.PUBLIC_URL + "assets/document/cv_vl.pdf"}
+              download="Vissarut LY"
+            >
+              <IconContext.Provider
+                value={{
+                  size: 36,
+                  className: "aiOutlineFilePdf",
+                }}
+              >
+                <AiOutlineFilePdf />
+              </IconContext.Provider>
+              <div className="file-name">CV</div>
+            </a>
+          </div>
 
           <div className="footer">
             <div className="mail">vissarut.ly@gmail.com</div>

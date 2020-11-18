@@ -5,8 +5,7 @@
   article {
     .pageTop {
       width: 100%;
-      height: 100vh;
-      padding: 200px 50px;
+      height: 120px;
       color: $font-primary-invert;
       background-color: $background-primary;
 
@@ -22,12 +21,6 @@
         &#twitter {
           &:hover {
             color: $color-twitter;
-          }
-        }
-
-        &#instagram {
-          &:hover {
-            color: $color-instagram;
           }
         }
       }
@@ -76,7 +69,7 @@
         position: fixed;
         top: 40px;
         right: 42px;
-        z-index: 1000;
+        z-index: 1;
         cursor: pointer;
 
         .faTimes {
@@ -115,7 +108,13 @@
     }
   }
 
-  @include fade;
+  @include fade-in;
+  @include fade-out;
+
+  .cv {
+    text-align: center;
+    margin: 75px 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -135,6 +134,10 @@
           right: 40px;
         }
       }
+    }
+
+    .cv {
+      margin: 75px 0 100px;
     }
   }
 }

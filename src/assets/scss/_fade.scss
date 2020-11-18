@@ -1,4 +1,4 @@
-@mixin fade {
+@mixin fade-in {
   .fade-in {
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
@@ -50,7 +50,8 @@
       opacity: 1;
     }
   }
-
+}
+@mixin fade-out {
   .fade-out {
     animation: fadeOut ease 9s;
     -webkit-animation: fadeOut ease 9s;

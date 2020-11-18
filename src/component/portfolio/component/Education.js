@@ -10,9 +10,11 @@ function Education(props) {
   if (props.TitleAcronym !== null) {
     tooltip = (
       <span className="tooltip">
-        <IconContext.Provider value={{ size: 12, verticalAlign: "sup" }}>
-          <FaRegQuestionCircle />
-        </IconContext.Provider>
+        <sup>
+          <IconContext.Provider value={{ size: 12 }}>
+            <FaRegQuestionCircle />
+          </IconContext.Provider>
+        </sup>
         <div className="tooltipTop">
           {props.TitleAcronym}
           <i></i>

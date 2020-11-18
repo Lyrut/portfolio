@@ -2,7 +2,7 @@ import React from "react";
 import "./social-networks.scss";
 
 import { IconContext } from "react-icons";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaGithub } from "react-icons/fa";
 
 function SocialNetwork(props) {
   let PageName = "socialNetworks";
@@ -44,13 +44,13 @@ function SocialNetwork(props) {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/_lyrut/?hl=fr"
+            href="https://github.com/Lyrut"
             target="_blank"
             rel="noopener noreferrer"
-            id="instagram"
+            id="github"
           >
             <IconContext.Provider value={{ className: "icons" }}>
-              <FaInstagram />
+              <FaGithub />
             </IconContext.Provider>
           </a>
         </li>
