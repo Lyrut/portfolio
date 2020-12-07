@@ -42,9 +42,9 @@
 
   &.portfolioP {
     ul {
-      justify-content: space-between;
-      flex-direction: column;
-      height: 100px;
+      justify-content: space-evenly;
+      flex-direction: row;
+      height: 30px;
 
       li {
         .icons {
@@ -68,16 +68,10 @@
 
     &.portfolioP {
       width: 150px;
+
       ul {
         justify-content: space-between;
-        flex-direction: row;
         height: 100%;
-
-        li {
-          .icons {
-            z-index: 1;
-          }
-        }
       }
     }
   }
@@ -96,16 +90,9 @@
 
     &.portfolioP {
       width: 250px;
+
       ul {
         justify-content: space-evenly;
-        flex-direction: row;
-        height: 100%;
-
-        li {
-          .icons {
-            z-index: 1;
-          }
-        }
       }
     }
   }

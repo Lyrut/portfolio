@@ -12,7 +12,8 @@
     },
     "job": {
       "description": null
-    }
+    },
+    "subjob": null
   },
   {
     "year": "2017-2018",
@@ -28,7 +29,17 @@
     "job": {
       "description": "Alternance en professionnalisation",
       "duration": "de 10 mois"
-    }
+    },
+    "subjob": [
+      {
+        "website": "https://www.1001traiteurs.com/",
+        "logo": {
+          "link": "https://www.1001traiteurs.com/assets/img/logo_1001_bg-dk.svg",
+          "class": "medium black"
+        },
+        "name": "1001traiteurs"
+      }
+    ]
   },
   {
     "year": "2015-2017",
@@ -44,6 +55,7 @@
     "job": {
       "description": "Alternance en apprentissage",
       "duration": "de 2 ans"
-    }
+    },
+    "subjob": null
   }
 ]

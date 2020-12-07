@@ -57,6 +57,7 @@ function Portfolio(props) {
         CompanyLocation={data.company.location}
         JobDescription={data.job.description}
         JobDuration={data.job.duration}
+        Subjob={data.subjob}
       />
     );
   });
@@ -128,6 +129,8 @@ function Portfolio(props) {
           {portfolio()}
 
           <div className="cv">
+            <div className="cv-info">Mon CV pour plus d'information</div>
+
             <a
               href={process.env.PUBLIC_URL + "assets/document/cv_vl.pdf"}
               download="Vissarut LY"
@@ -145,6 +148,9 @@ function Portfolio(props) {
           </div>
 
           <div className="footer">
+            <div className="snList">
+              <SocialNetworks PageName="portfolioP" />
+            </div>
             <div className="mail">vissarut.ly@gmail.com</div>
           </div>
         </section>
