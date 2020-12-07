@@ -159,4 +159,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio;
+export default React.memo(Portfolio);

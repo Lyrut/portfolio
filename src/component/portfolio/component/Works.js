@@ -14,17 +14,17 @@ function Works(props) {
   }
 
   if (props.Subjob !== null) {
-    subjob = (
-      <div className="subjob">
-        <a href={props.SubjobWebsite} target="_blank" rel="noopener noreferrer">
-          <img
-            src={props.SubjobLogo}
-            alt={props.SubjobName}
-            className={props.SubjobClass}
-          ></img>
-        </a>
-      </div>
-    );
+    subjob = props.Subjob.map((subjob, i) => {
+      let customClass = subjob.class ? "subjob " + subjob.class : "";
+
+      return (
+        <div className={customClass} key={i}>
+          <a href={subjob.website} target="_blank" rel="noopener noreferrer">
+            <img src={subjob.logo.link} alt={subjob.logo.class}></img>
+          </a>
+        </div>
+      );
+    });
   }
 
   return (
