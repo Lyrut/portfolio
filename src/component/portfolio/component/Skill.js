@@ -3,7 +3,6 @@ import "../scss/skill.scss";
 
 function Skill(props) {
   const language = props.Language.map((data, i) => {
-    console.log(data.name);
     return (
       <li className="language" key={i}>
         {progressbar(data)}
