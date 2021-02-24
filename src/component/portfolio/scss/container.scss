@@ -21,9 +21,10 @@
     text-align: left;
 
     .skillsBarContainer {
-      width: 300px;
       margin: 0 auto;
       list-style: none;
+      display: flex;
+      justify-content: space-around;
     }
   }
 
@@ -48,11 +49,7 @@
 
   .contentContainer {
     .development {
-      padding: 0 200px;
-
-      .skillsBarContainer {
-        width: 500px;
-      }
+      padding: 0 150px;
     }
 
     .listWorks {

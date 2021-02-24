@@ -9,7 +9,13 @@ $animation-delay: 0.7s;
   border-radius: $radius;
 }
 
-.language {
+.languages,
+.frameworks {
+  width: 35%;
+}
+
+.language,
+.framework {
   position: relative;
   width: 100%;
   padding: 10px 0;
@@ -77,6 +83,18 @@ $animation-delay: 0.7s;
         &-sage {
           background-color: $sage;
         }
+
+        &-americanred {
+          background-color: $americanred;
+        }
+
+        &-mint {
+          background-color: $mint;
+        }
+
+        &-skyblue {
+          background-color: $skyblue;
+        }
       }
 
       &#progress {
@@ -127,6 +145,27 @@ $animation-delay: 0.7s;
           animation-name: progress-twig;
           -webkit-animation-delay: $animation-delay * 7;
           animation-delay: $animation-delay * 7;
+        }
+
+        &-angular {
+          -webkit-animation-name: progress-angular;
+          animation-name: progress-angular;
+          -webkit-animation-delay: $animation-delay;
+          animation-delay: $animation-delay;
+        }
+
+        &-react {
+          -webkit-animation-name: progress-react;
+          animation-name: progress-react;
+          -webkit-animation-delay: $animation-delay * 2;
+          animation-delay: $animation-delay * 2;
+        }
+
+        &-vue {
+          -webkit-animation-name: progress-vue;
+          animation-name: progress-vue;
+          -webkit-animation-delay: $animation-delay * 3;
+          animation-delay: $animation-delay * 3;
         }
       }
     }
@@ -182,6 +221,30 @@ $animation-delay: 0.7s;
   }
 }
 @-webkit-keyframes progress-twig {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@-webkit-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@-webkit-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@-webkit-keyframes progress-vue {
   0% {
     width: 0%;
   }
@@ -246,6 +309,30 @@ $animation-delay: 0.7s;
     width: 40%;
   }
 }
+@-moz-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@-moz-keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@-moz-keyframes progress-vue {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
 
 @keyframes progress-html {
   0% {
@@ -296,6 +383,30 @@ $animation-delay: 0.7s;
   }
 }
 @keyframes progress-twig {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes progress-vue {
   0% {
     width: 0%;
   }

@@ -35,13 +35,7 @@ function Portfolio(props) {
 
   const skills = DataSkills.map((data, i) => {
     return (
-      <Skill
-        key={i}
-        LangName={data.name}
-        Percent={data.percent}
-        Color={data.color}
-        Parameter={data.parameter}
-      />
+      <Skill key={i} Language={data.language} Framework={data.framework} />
     );
   });
 
